@@ -15,6 +15,8 @@ devise_for :admin, skip: [:registrations, :passwords] ,controllers: {
       get "search" => "searches#search"
 
       resources :customers
+
+       resources :books
   end
 
   # 管理者
